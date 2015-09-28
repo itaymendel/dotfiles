@@ -50,6 +50,9 @@ set-window-option -g window-status-current-fg brightred #orange
 set-window-option -g window-status-current-bg colour236
 set-window-option -g window-status-current-attr bright
 
+setw -g window-status-current-format "#[fg=colour255, bg=colour24] #I | #W#[fg=yellow]* #[fg=colour24, bg=colour235] "
+setw -g window-status-format "#[fg=colour250, bg=colour235] #I|#W "
+
 set -g status-right-length 80
 set -g status-right "#[fg=cyan]#S #I:#P #[fg=yellow]: %d %b %Y #[fg=green]: %l:%M %p : #(date -u | awk '{print $4}') :"
 
