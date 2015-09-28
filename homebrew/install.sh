@@ -23,7 +23,6 @@ then
   brew tap Homebrew/bundle
   scriptPath=$(dirname "$0")
   brew bundle --file="$scriptPath/Brewfile"
-  iFinishStep "OSX installation complete" 
 fi
 
 # Install homebrew packages
