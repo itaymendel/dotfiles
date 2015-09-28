@@ -6,8 +6,8 @@ unbind C-b
 bind C-a send-prefix
 set -sg escape-time 1
 
-bind | split-window -h
-bind - split-window -v
+bind \ split-window -h -c '#{pane_current_path}'
+bind - split-window -v -c '#{pane_current_path}'
 
 set-option -g default-command "reattach-to-user-namespace -l zsh"
 set-window-option -g automatic-rename on
@@ -51,7 +51,7 @@ set-window-option -g window-status-current-bg colour236
 set-window-option -g window-status-current-attr bright
 
 set -g status-right-length 80
-set -g status-right "#[fg=cyan]#{=15:pane_title} : #[fg=blue]#S #I:#P #[fg=yellow]: %d %b %Y #[fg=green]: %l:%M %p : #(date -u | awk '{print $4}') :"
+set -g status-right "#[fg=cyan]#S #I:#P #[fg=yellow]: %d %b %Y #[fg=green]: %l:%M %p : #(date -u | awk '{print $4}') :"
 
 set -g status-left-length 85
 set -g status-left "#[fg=green]: #h : #[fg=brightblue]#(dig +short myip.opendns.com @resolver1.opendns.com) #[fg=yellow]#(ifconfig en0 | grep 'inet ' | awk '{print \"en0 \" $2}') #(ifconfig en1 | grep 'inet ' | awk '{print \"en1 \" $2}') #(ifconfig en3 | grep 'inet ' | awk '{print \"en3 \" $2}') #[fg=red]#(ifconfig tun0 | grep 'inet ' | awk '{print \"vpn \" $2}') #[fg=green]#(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk -F': ' '/ SSID/{print $2}') "
