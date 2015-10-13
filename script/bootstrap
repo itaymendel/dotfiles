@@ -154,3 +154,4 @@ fi
 
 echo ''
 echo '  All installed!'
+echo ' Do not forget to change iTerm2 font to hack (preferences -> profiles -> text)'
