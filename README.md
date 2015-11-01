@@ -49,3 +49,16 @@ There's a few special files in the hierarchy.
   your `$HOME`. This is so you can keep all of those versioned in your dotfiles
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
+
+## changes from holman's
+
+- Atom removed.
+- Vim + my configuration and plugins.
+- tmux configuration.
+- more macOS configurations.
+- more software installed via brew and cask
+- downloads the 'hack' font.
+
+# TODOs
+
+- learn how to configure iTerm's font automatically.
