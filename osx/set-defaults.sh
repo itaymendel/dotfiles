@@ -111,7 +111,7 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock showhidden -bool true
 
 # Show hidden files
-defaults write com.apple.finder AppleShowAllFiles YES
+defaults write com.apple.finder AppleShowAllFiles true
 
 # Enable iTunes track notifications in the Dock
 defaults write com.apple.dock itunes-notifications -bool true
